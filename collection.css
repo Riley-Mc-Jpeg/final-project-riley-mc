@@ -45,13 +45,16 @@ header {
   border-bottom: 1px solid black;
   font-size: 4rem;
 }
-
-@media screen and (max-width: 780px) {
-  header {
-    font-size: 1rem;
-    max-width: 700px;
-  }
+header a:visited {
+  color: #000000;
 }
+
+@media screen and (max-width: 320px) {
+  header {
+    font-size: 3rem;
+    
+  }
+} 
 
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -62,25 +65,25 @@ header {
   
     = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
-.topnav {
+/* .topnav {
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   gap: 0 1rem;
-}
+} */
 
-.topnav a,
+/* .topnav a,
 .contact-link a {
   color: var(--dark-text);
   text-decoration: none;
   font-size: 1.15em;
-}
+} */
 
-.topnav a:hover {
+/* .topnav a:hover {
   text-decoration: underline;
-}
+} */
 
-.icon {
+/* .icon {
   position: absolute;
   display: none;
   color: var(--dark-text-colour);
@@ -88,28 +91,28 @@ header {
   text-decoration: none;
   width: 3rem;
   height: 2rem;
-}
+} */
 
-@media screen and (max-width: 780px) {
+/* @media screen and (max-width: 780px) {
   .topnav {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 0.7em;
-  }
+  } */
 
-  .topnav a {
+  /* .topnav a {
     display: none;
-  }
+  } */
 
-  .icon {
+  /* .icon {
     display: block;
-  }
+  } */
   /* .Nav-text {
     font-size: 1rem;
-  } */
-}
+  }
+} */
 
-@media screen and (max-width: 780px) {
+/* @media screen and (max-width: 780px) {
   .topnav.responsive {
     position: absolute;
     top: 0;
@@ -134,7 +137,7 @@ header {
     display: block;
     text-align: left;
   }
-}
+} */
 
 /* @media screen and (max-width: 26em) {
   header h1 {
@@ -168,6 +171,7 @@ header {
   grid-template-columns: repeat(1, minmax(0, 1fr));
   align-items: end;
   gap: 1rem;
+  padding: 1rem;
 }
 
 /* Mobile first: two-column grid for large phones */
