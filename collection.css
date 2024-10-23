@@ -46,12 +46,12 @@ header {
   font-size: 4rem;
 }
 
-/* @media screen and (max-width: 780px) {
+@media screen and (max-width: 780px) {
   header {
     font-size: 1rem;
     max-width: 700px;
   }
-} */
+}
 
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -109,7 +109,7 @@ header {
   } */
 }
 
-/* @media screen and (max-width: 780px) {
+@media screen and (max-width: 780px) {
   .topnav.responsive {
     position: absolute;
     top: 0;
@@ -134,7 +134,7 @@ header {
     display: block;
     text-align: left;
   }
-} */
+}
 
 /* @media screen and (max-width: 26em) {
   header h1 {
