@@ -8,7 +8,7 @@
 @import url('colour.css');
 
 /*--------------------------------------- PAGE -------------------------------------*/
-* {outline: 1px red dashed;}
+/* * {outline: 1px red dashed;} */
 html,body {
   height: 100%;
   width: 100%;
