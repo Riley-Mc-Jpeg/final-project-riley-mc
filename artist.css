@@ -21,7 +21,11 @@
     border-bottom: 1px solid black;
     font-size: 4rem;
   }
-
+  @media (max-width: 320px) {
+    header { 
+      font-size: 3rem;
+    }
+  }
   header a:visited {
     color: black;
   }
