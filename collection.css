@@ -46,6 +46,13 @@ header {
   font-size: 4rem;
 }
 
+/* @media screen and (max-width: 780px) {
+  header {
+    font-size: 1rem;
+    max-width: 700px;
+  }
+} */
+
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
   
@@ -97,16 +104,19 @@ header {
   .icon {
     display: block;
   }
+  /* .Nav-text {
+    font-size: 1rem;
+  } */
 }
 
-@media screen and (max-width: 780px) {
+/* @media screen and (max-width: 780px) {
   .topnav.responsive {
     position: absolute;
     top: 0;
     left: 0;
     width: 40vw;
     margin-top: 0;
-    padding: 6em 2em 4em 2em;
+    padding: 4em 2em 4em 2em;
     background-color: var(--page-background);
   }
 
@@ -124,9 +134,9 @@ header {
     display: block;
     text-align: left;
   }
-}
+} */
 
-@media screen and (max-width: 26em) {
+/* @media screen and (max-width: 26em) {
   header h1 {
     max-width: 300px;
     line-height: 100%;
@@ -141,7 +151,7 @@ header {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
-}
+} */
 
 /* === Main Content area =========== */
 
