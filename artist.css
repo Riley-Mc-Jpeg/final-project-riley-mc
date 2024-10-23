@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+@import url('css/reset.css');
+@import url('typography.css');
+
+/* header {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.4rem;
+    border-bottom: 4px solid black;
+    font-size: 4rem;
+  } */
+  header {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.4rem;
+    border-bottom: 1px solid black;
+    font-size: 4rem;
+  }
+
+  header a:visited {
+    color: black;
+  }
+  body {
+    font-family: 'Nintendo DS', sans-serif;
+    font-size: 1.2rem;
+    background-color: var(--page-background);
+    color: var(--dark-text-colour);
+  }  
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+  /* .photo {
+    max-height: 500px;
+  } */
+
+  .topnav {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1rem;
+  }
+  
+  .topnav a,
+  .contact-link a {
+    color: var(--dark-text);
+    text-decoration: none;
+    font-size: 1.15em;
+  }
+  
+  .topnav a:hover {
+    text-decoration: underline;
+  }
+  
+  .icon {
+    position: absolute;
+    display: none;
+    color: var(--dark-text-colour);
+    font-size: 2em;
+    text-decoration: none;
+    width: 3rem;
+    height: 2rem;
+  }
+
+  .grid--masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min(50rem, 100%));
+    grid-template-rows: masonry;
+    justify-content: center;
+    /* grid-row-gap: 1.25rem;
+    grid-column-gap: 1.25rem; */
+    grid-gap: 0.5rem;
+    padding: 1.25rem;
+}
+
+.grid--masonry>* {
+    width: min(50rem, 100%);
+}
+
+.grid--masonry img {
+    border-radius: 8px;
+}

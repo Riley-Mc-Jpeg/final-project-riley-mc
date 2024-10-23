@@ -1,0 +1,221 @@
+/*
+    Author: Your name
+    Creation date: 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+@import url('css/reset.css');
+@import url('typography.css');
+
+/* === Reset =============== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Colour =============== */
+html {
+  --dark-text-colour: #000000;
+  --page-background: #ffffff;
+}
+
+/* === Typography and Page setup === */
+body {
+  font-family: 'Nintendo DS', sans-serif;
+  font-size: 1.2rem;
+  background-color: white;
+  color: var(--dark-text-colour);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+/* === Header layout =========== */
+header {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.4rem;
+  border-bottom: 1px solid black;
+  font-size: 4rem;
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+    NAVIGATION MENU FOR MOBILE DEVICE WIDTHS
+
+    Responsive menu adapted from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+  
+    = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.topnav {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1rem;
+}
+
+.topnav a,
+.contact-link a {
+  color: var(--dark-text);
+  text-decoration: none;
+  font-size: 1.15em;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  position: absolute;
+  display: none;
+  color: var(--dark-text-colour);
+  font-size: 2em;
+  text-decoration: none;
+  width: 3rem;
+  height: 2rem;
+}
+
+@media screen and (max-width: 780px) {
+  .topnav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.7em;
+  }
+
+  .topnav a {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .topnav.responsive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40vw;
+    margin-top: 0;
+    padding: 6em 2em 4em 2em;
+    background-color: var(--page-background);
+  }
+
+  header {
+    justify-content: flex-end;
+  }
+
+  .icon {
+    position: absolute;
+    top: .9em;
+    left: 1em;
+  }
+
+  .topnav.responsive a {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 26em) {
+  header h1 {
+    max-width: 300px;
+    line-height: 100%;
+  }
+
+  header {
+    height: 6rem;
+    padding-bottom: 0;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* === Main Content area =========== */
+
+.main-content-area {
+  padding: 1rem 2rem 0 2rem;
+  /* More padding on the sides than the top, no padding on the bottom */
+}
+
+/* === Grid-based Portfolio =========== */
+
+/* Mobile first: one-column grid - layout using CSS Grid*/
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  align-items: end;
+  gap: 1rem;
+}
+
+/* Mobile first: two-column grid for large phones */
+@media (min-width: 622px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile first: three-column grid for laptops and tablets */
+@media (min-width: 902px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Mobile first: four-column grid for desktop screen widths */
+@media (min-width: 1267px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Portfolio 'card' - layout using Flexbox */
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Portfolio text details - layout using Flexbox */
+.portfolio-item__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Portfolio image - make sure ALL your portfolio images are sized to the same dimensions */
+.portfolio-item__img {
+  width: 100%;
+  border-radius: 0.25rem;
+  object-fit: contain;
+}
+
+.portfolio-item__title {
+  font-size: 2rem;
+}
+
+.portfolio-item__date,
+.portfolio-item__media {
+  font-size: .8rem;
+  font-weight: 300;
+}
+
+/* ==== Footer ================= */
+
+footer p {
+  font-size: 1rem;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+/* ==== END ==== */

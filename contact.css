@@ -1,0 +1,148 @@
+/*
+    Author: Your name
+    Creation date: 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+@import url('css/reset.css');
+@import url('typography.css');
+
+/* === Reset =============== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Colour =============== */
+html {
+  --dark-text-colour: #000000;
+  --page-background: #ffffff;
+}
+
+/* === Typography and Page setup === */
+
+
+
+body {
+  font-family: 'Nintendo DS', sans-serif;
+  font-size: 5rem;
+  background-color: var(--page-background);
+  color: var(--dark-text-colour);
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+/* === Header layout =========== */
+header {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.4rem;
+  border-bottom: 1px solid var(--dark-text-colour);
+  font-size: 4rem;
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  
+    NAVIGATION MENU FOR MOBILE DEVICE WIDTHS
+
+    Responsive menu adapted from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+  
+    = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.topnav {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1rem;
+}
+
+.topnav a,
+.contact-link a {
+  color: var(--dark-text);
+  text-decoration: none;
+  font-size: 1.15em;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  position: absolute;
+  display: none;
+  color: var(--dark-text-colour);
+  font-size: 2em;
+  text-decoration: none;
+  width: 3rem;
+  height: 2rem;
+}
+
+@media screen and (max-width: 780px) {
+  .topnav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.7em;
+  }
+
+  .topnav a {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .topnav.responsive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40vw;
+    margin-top: 0;
+    padding: 6em 2em 4em 2em;
+    background-color: var(--page-background);
+  }
+
+  header {
+    justify-content: flex-end;
+  }
+
+  .icon {
+    position: absolute;
+    top: .9em;
+    left: 1em;
+  }
+
+  .topnav.responsive a {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 26em) {
+  header h1 {
+    max-width: 300px;
+    line-height: 100%;
+  }
+
+  header {
+    height: 6rem;
+    padding-bottom: 0;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+

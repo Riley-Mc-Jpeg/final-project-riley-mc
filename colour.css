@@ -1,0 +1,5 @@
+/* Assigning colours to variables */
+html {
+    --white-text: #ffff;
+    --black-text: #000000;
+}

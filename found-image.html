@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<!-- *****************************
+         Author: 
+         Creation date: 
+     ***************************** -->
+
+<head>
+    <title>Grid Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="artist.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="topnav" id="myTopnav"> <!-- Responsive Navigation menu -->
+            <a href="index.html">Home</a>
+            >
+            <a href="collection.html">Collections</a>
+            >
+            Ann Shelton
+            
+        </nav>
+    </header>
+
+    <main class="main-content-area"> <!-- The main page content -->
+
+        <section class="grid--masonry">
+            <img class="photo" src="photography/foundimage/foundimage_1.jpg" alt="Dune">
+            <img class="photo" src="photography/foundimage/foundimage_2.jpg" alt="landscape image">
+            <img class="photo" src="photography/foundimage/foundimage_3.jpg" alt="landscape image">
+            <img class="photo" src="photography/foundimage/foundimage_4.jpg" alt="landscape image">
+        </section>
+    </main>
+
+    <script src="js/masonry-grid-script.js"></script>
+
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+<footer>
+    <p>
+      Copyright Riley McIntosh &copy; 2024. Copyright material on this website is protected by copyright owned by
+      Riley McIntosh Here. Unless indicated otherwise for specific items or collections of content (either below or
+      within specific items or collections), this copyright material is licensed for re-use under the Creative
+      Commons Attribution / Share-Alike (CC BY-SA 4.0) International licence. In essence, you are free to
+      copy, distribute and adapt the material, as long as you attribute it to me and abide by the other
+      licence terms. Please note that this licence does not apply to any logos, design, images, photography,
+      drawing, animation, emblems and trade marks on the website or to the website’s design elements, or to
+      any other photography and imagery embedded in the website or used in the background. Those specific
+      items may not be re-used without express permission from the website owner.
+    </p>
+  </footer>
+</html>
