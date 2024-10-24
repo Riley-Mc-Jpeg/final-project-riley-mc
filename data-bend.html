@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<!-- *****************************
+         Author: Riley McIntosh
+         Creation date: 23/1024
+     ***************************** -->
+
+<head>
+    <title>Grid Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="artist.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="topnav" id="myTopnav"> <!-- Responsive Navigation menu -->
+            <a href="index.html">Home</a>
+            >
+            <a href="collection.html">Collections</a>
+            >
+            Data Bend
+            
+        </nav>
+    </header>
+
+    <main class="main-content-area"> <!-- The main page content -->
+
+        <section class="grid--masonry">
+            <img class="photo" src="photography/data-bend/databending_1.jpg" alt="annshelton_1">
+            <img class="photo" src="photography/data-bend/databending_2.jpg" alt="annshelton_2">
+            <img class="photo" src="photography/data-bend/databending_3.jpg" alt="annshelton_3">
+            <img class="photo" src="photography/data-bend/databending_4.jpg" alt="annshelton_4">
+            <img class="photo" src="photography/data-bend/databending_5.jpg" alt="annshelton_5">
+            <img class="photo" src="photography/data-bend/databending_10.jpg" alt="annshelton_6">
+            <img class="photo" src="photography/data-bend/databending_11.jpg" alt="annshelton_7">
+            <img class="photo" src="photography/data-bend/databending_25.jpg" alt="annshelton_8">
+            <img class="photo" src="photography/data-bend/databending_26.jpg" alt="annshelton_9">
+            <img class="photo" src="photography/data-bend/databending_27.jpg" alt="annshelton_10">
+            <img class="photo" src="photography/data-bend/databending_28.jpg" alt="annshelton_11">
+            <img class="photo" src="photography/data-bend/databending_29.jpg" alt="annshelton_12">
+            <img class="photo" src="photography/data-bend/databending_30.jpg" alt="annshelton_13">
+
+        </section>
+    </main>
+
+    <script src="js/masonry-grid-script.js"></script>
+
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+<footer>
+    <p>
+      Copyright Riley McIntosh &copy; 2024. Copyright material on this website is protected by copyright owned by
+      Riley McIntosh Here. Unless indicated otherwise for specific items or collections of content (either below or
+      within specific items or collections), this copyright material is licensed for re-use under the Creative
+      Commons Attribution / Share-Alike (CC BY-SA 4.0) International licence. In essence, you are free to
+      copy, distribute and adapt the material, as long as you attribute it to me and abide by the other
+      licence terms. Please note that this licence does not apply to any logos, design, images, photography,
+      drawing, animation, emblems and trade marks on the website or to the website’s design elements, or to
+      any other photography and imagery embedded in the website or used in the background. Those specific
+      items may not be re-used without express permission from the website owner.
+    </p>
+  </footer>
+</html>
